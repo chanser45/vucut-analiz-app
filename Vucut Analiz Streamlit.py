@@ -96,13 +96,25 @@ if st.button("HESAPLA"):
     **LBM:** {sonuc['LBM']:.2f} kg  
     **BMI:** {sonuc['BMI']:.2f} - {sonuc['BMI_Yorum']}  
     **Yağ Oranı:** %{sonuc['Yag_Orani']:.2f} - {sonuc['Yag_Yorum']}  
+    
+    Yağ oranınız, tamamen sizinle aynı kilo, boy ve yaştaki kişilerin ortalama yağ oranına göre hesaplanmıştır.
+    Kesin doğruluğu yoktur. Yağlı vücut tipiniz varsa biraz daha fazla. Zayıf vücut tipiniz varsa biraz daha eksik olabilir. 
 
     **Günlük Protein İhtiyacı:**  
-    Kilo Alırken: {sonuc['Protein_Al'][0]}g - {sonuc['Protein_Al'][1]}g  
-    Kilo Verirken: {sonuc['Protein_Ver'][0]}g - {sonuc['Protein_Ver'][1]}g  
+    Kilo Alırken Min: {sonuc['Protein_Al'][0]}g - {sonuc['Protein_Al'][1]}g  
+    Kilo Verirken Min: {sonuc['Protein_Ver'][0]}g - {sonuc['Protein_Ver'][1]}g 
+    
+    Bu aralık almanız gereken minimum aralığı ifade etmektedir. Daha yüksek miktarlarda protein almanız daha iyidir fakat alamıyorsanız minimumdaki değer de kurtarır.
+    
+    Protein alımınız kilo alırken, aldığınız kiloları yağ yerine kas olarak almanızı sağlayacaktır.
+    Kilo verirken ise verdiğiniz kiloları kas yerine yağ olarak kaybetmenizi sağlayacaktır.
+    
 
     **Günlük Kalori İhtiyacı:**  
-    Bakım: {sonuc['Kalori']:.0f} kcal  
-    Kilo Almak İçin: {sonuc['Kalori']+500:.0f} kcal  
-    Kilo Vermek İçin: {sonuc['Kalori']-500:.0f} kcal
+    Kiloyu Korumak İçin: {sonuc['Kalori']:.0f} kcal  
+    Kilo Almak İçin Min: {sonuc['Kalori']+400:.0f} kcal  
+    Kilo Vermek İçin Max: {sonuc['Kalori']-400:.0f} kcal
+    
+    Kalori ihtiyacınız vücut tipinize göre değişebilir. Bu yüzden kolay kilo alan biriyseniz her iki değerden 100-200 kalori daha çıkarın.
+    Eğer zor kilo alan biriyseniz her iki değer 100-200 kalori daha ekleyin.
     """)
