@@ -93,8 +93,8 @@ if st.button("HESAPLA"):
     sonuc = hesapla(yas, kilo, boy, cinsiyet, int(aktiflik[0]))
     st.subheader("Sonuçlar")
     st.markdown(f"""
-    **LBM:** {sonuc['LBM']:.2f} kg  
-    **BMI:** {sonuc['BMI']:.2f} - {sonuc['BMI_Yorum']}  
+    **Yağsız Kas Kütleniz (LBM):** {sonuc['LBM']:.2f} kg  
+    **Dünya Sağlık Örgütüne göre (BMI):** {sonuc['BMI']:.2f} - {sonuc['BMI_Yorum']}  
     **Yağ Oranı:** %{sonuc['Yag_Orani']:.2f} - {sonuc['Yag_Yorum']}  
     
     Yağ oranınız, tamamen sizinle aynı kilo, boy ve yaştaki kişilerin ortalama yağ oranına göre hesaplanmıştır.
@@ -104,8 +104,8 @@ if st.button("HESAPLA"):
 
 
     **Günlük Protein İhtiyacı:**  
-    Kilo Alırken Min: {sonuc['Protein_Al'][0]}g - {sonuc['Protein_Al'][1]}g  
-    Kilo Verirken Min: {sonuc['Protein_Ver'][0]}g - {sonuc['Protein_Ver'][1]}g 
+    Kilo Alırken (Min): {sonuc['Protein_Al'][0]}g - {sonuc['Protein_Al'][1]}g  
+    Kilo Verirken (Min): {sonuc['Protein_Ver'][0]}g - {sonuc['Protein_Ver'][1]}g 
     
     Bu aralık almanız gereken minimum aralığı ifade etmektedir. Daha yüksek miktarlarda protein almanız daha iyidir fakat alamıyorsanız minimumdaki değer de kurtarır.
     
