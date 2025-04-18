@@ -121,5 +121,5 @@ if st.button("HESAPLA"):
     Kilo Vermek İçin Max: {sonuc['Kalori']-400:.0f} kcal
     
     Kalori ihtiyacınız vücut tipinize göre değişebilir. Bu yüzden kolay kilo alan biriyseniz her iki değerden 100-200 kalori daha çıkarın.
-    Eğer zor kilo alan biriyseniz her iki değer 100-200 kalori daha ekleyin.
+    Eğer zor kilo alan biriyseniz her iki değere 100-200 kalori daha ekleyin.
     """)
