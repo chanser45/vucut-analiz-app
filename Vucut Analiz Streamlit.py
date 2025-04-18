@@ -102,6 +102,7 @@ if st.button("HESAPLA"):
 
 
 
+
     **Günlük Protein İhtiyacı:**  
     Kilo Alırken Min: {sonuc['Protein_Al'][0]}g - {sonuc['Protein_Al'][1]}g  
     Kilo Verirken Min: {sonuc['Protein_Ver'][0]}g - {sonuc['Protein_Ver'][1]}g 
