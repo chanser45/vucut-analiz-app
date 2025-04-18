@@ -100,6 +100,8 @@ if st.button("HESAPLA"):
     Yağ oranınız, tamamen sizinle aynı kilo, boy ve yaştaki kişilerin ortalama yağ oranına göre hesaplanmıştır.
     Kesin doğruluğu yoktur. Yağlı vücut tipiniz varsa biraz daha fazla. Zayıf vücut tipiniz varsa biraz daha eksik olabilir. 
 
+
+
     **Günlük Protein İhtiyacı:**  
     Kilo Alırken Min: {sonuc['Protein_Al'][0]}g - {sonuc['Protein_Al'][1]}g  
     Kilo Verirken Min: {sonuc['Protein_Ver'][0]}g - {sonuc['Protein_Ver'][1]}g 
@@ -109,6 +111,8 @@ if st.button("HESAPLA"):
     Protein alımınız kilo alırken, aldığınız kiloları yağ yerine kas olarak almanızı sağlayacaktır.
     Kilo verirken ise verdiğiniz kiloları kas yerine yağ olarak kaybetmenizi sağlayacaktır.
     
+
+
 
     **Günlük Kalori İhtiyacı:**  
     Kiloyu Korumak İçin: {sonuc['Kalori']:.0f} kcal  
